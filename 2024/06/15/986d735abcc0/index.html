@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://blog.jeanhua.cn/archives/page/2/"/>
+  
+  <link rel="canonical" href="http://blog.jeanhua.cn/2024/06/15/986d735abcc0/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -35,17 +35,19 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="jeanhua's blog" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>Archive - jeanhua's blog</title>
+  <title>python爬取校园集市帖子并生成词云图 - jeanhua's blog</title>
   <meta name="keywords" content="blog">
   <meta desc name="description" content="欢迎来到我的博客，本项目采用hexo框架 - jeanhua - jeanhua's blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="jeanhua&#39;s blog">
-<meta property="og:url" content="http://blog.jeanhua.cn/archives/page/2/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python爬取校园集市帖子并生成词云图">
+<meta property="og:url" content="http://blog.jeanhua.cn/2024/06/15/986d735abcc0/index.html">
 <meta property="og:site_name" content="jeanhua&#39;s blog">
-<meta property="og:description" content="欢迎来到我的博客，本项目采用hexo框架">
+<meta property="og:description" content="注：本篇需要python基础，json基础  前言：上篇我们学习了怎么用python获取百度热搜，在这篇中，我们将进一步学习，利用python爬取校园集市帖子并生成词云图 懒的话直接点这里进入完整代码仓库🤣 [toc]灵感背景：经常在群里看见机器人转发的校园集市帖子，于是想要爬取下来分析一下 第一步，分析请求 点击链接进入浏览器页面 按下F12打开浏览器开发者界面 点击网络，按下F5刷新 刷">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-06-15T08:37:00.000Z">
+<meta property="article:modified_time" content="2024-07-20T14:08:11.799Z">
 <meta property="article:author" content="jeanhua">
 <meta property="article:tag" content="blog">
 <meta name="twitter:card" content="summary">
@@ -2173,7 +2175,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2442,7 +2444,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  dock' style="display: ;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://pic.imgdb.cn/item/66935fffd9c307b7e95250b5.jpg"></div>
 
@@ -2517,255 +2519,254 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-	  <article id="arc" class="post article white-box reveal shadow floatable blur">
-			
-			
-				
-				
-					
-						
-						<h2>2024</h2>
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/07/20/85976580bd9f/">
-									<time>07-20</time>
-									
-										ubuntu服务器配置网站
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/07/15/259b0a619408/">
-									<time>07-15</time>
-									
-										服务器入门
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/06/17/c85462058ea9/">
-									<time>06-17</time>
-									
-										关于Visual Studio报错scanf_s等*_s代码报错的解决方案
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/06/15/986d735abcc0/">
-									<time>06-15</time>
-									
-										python爬取校园集市帖子并生成词云图
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/06/15/f349664957c7/">
-									<time>06-15</time>
-									
-										python爬虫获取百度热搜
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/06/15/347ddd515696/">
-									<time>06-15</time>
-									
-										python爬虫入门
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/06/03/c99c3826bf5e/">
-									<time>06-03</time>
-									
-										解决安装cuda时vs报错MSB3721的问题
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/05/15/13c8f9b8f4b0/">
-									<time>05-15</time>
-									
-										汇编指令大全
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/04/27/d4ef61b01025/">
-									<time>04-27</time>
-									
-										看累了？刷会b站!
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/04/27/0b07f4fdbced/">
-									<time>04-27</time>
-									
-										博客markdown内嵌网页
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/04/26/b8db80ffa065/">
-									<time>04-26</time>
-									
-										高等数学笔记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/04/26/5636a234bad4/">
-									<time>04-26</time>
-									
-										JHMG游戏引擎
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/04/26/61e41c63e4ab/">
-									<time>04-26</time>
-									
-										资源推荐
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/04/26/c6d88edcd957/">
-									<time>04-26</time>
-									
-										寻道大学•逐梦启航
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/04/26/238a8dd14134/">
-									<time>04-26</time>
-									
-										GK320刷机
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-	  </article>
-	
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://blog.jeanhua.cn/2024/06/15/986d735abcc0/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="jeanhua's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="jeanhua's blog">
+    <meta itemprop="description" content="欢迎来到我的博客，本项目采用hexo框架">
+  </span>
+  
+
+
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title" itemprop="name headline">
+        python爬取校园集市帖子并生成词云图
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">jeanhua</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-06-15T16:37:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Jun 15, 2024</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <meta name="referrer" content="never">
+
+<p>注：本篇需要python基础，json基础</p>
+<hr>
+<p>前言：上篇我们学习了怎么用python获取百度热搜，在这篇中，我们将进一步学习，利用python爬取校园集市帖子并生成词云图</p>
+<p><strong><a target="_blank" rel="noopener" href="https://github.com/jeanhua/wordcloud-of-campus-marketplaces">懒的话直接点这里进入完整代码仓库🤣</a></strong></p>
+<p>[toc]<br>灵感背景：经常在群里看见机器人转发的校园集市帖子，于是想要爬取下来分析一下<br><img src="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615154240387-368856598.png" class="lazyload" data-srcset="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615154240387-368856598.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"></p>
+<h2 id="第一步，分析请求"><a href="#第一步，分析请求" class="headerlink" title="第一步，分析请求"></a>第一步，分析请求</h2><p> 点击链接进入浏览器页面<br><img src="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615154419045-2015337560.png" class="lazyload" data-srcset="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615154419045-2015337560.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"><br> 按下F12打开浏览器开发者界面<br><img src="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615154517855-1451229480.png" class="lazyload" data-srcset="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615154517855-1451229480.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"><br> 点击网络，按下F5刷新<br><img src="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615154629872-214869453.png" class="lazyload" data-srcset="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615154629872-214869453.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"><br> 刷新后如图所示<br><img src="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615154654761-1461176390.png" class="lazyload" data-srcset="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615154654761-1461176390.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"><br> 点击预览，寻找目标请求<br><img src="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615154924239-390335851.png" class="lazyload" data-srcset="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615154924239-390335851.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"><br> 最终找到请求<br><img src="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615155001722-710240155.png" class="lazyload" data-srcset="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615155001722-710240155.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"><br> 点击标头，获取url<br><img src="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615155247150-558470838.png" class="lazyload" data-srcset="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615155247150-558470838.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"></p>
+<h2 id="第二步，编写代码"><a href="#第二步，编写代码" class="headerlink" title="第二步，编写代码"></a>第二步，编写代码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="comment">#发送http请求</span></span><br><span class="line">url = <span class="string">&#x27;https://u.xiaouni.com/user-api/content/article/info?id=17020&#x27;</span></span><br><span class="line">response = requests.get(url=url)</span><br><span class="line"><span class="comment">#打印结果</span></span><br><span class="line"><span class="built_in">print</span>(response.text)</span><br></pre></td></tr></table></figure>
+<p>结果如下</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span><span class="attr">&quot;code&quot;</span><span class="punctuation">:</span><span class="number">200</span><span class="punctuation">,</span><span class="attr">&quot;msg&quot;</span><span class="punctuation">:</span><span class="string">&quot;\u8bf7\u6c42\u6210\u529f&quot;</span><span class="punctuation">,</span><span class="attr">&quot;data&quot;</span><span class="punctuation">:</span><span class="punctuation">&#123;</span><span class="attr">&quot;id&quot;</span><span class="punctuation">:</span><span class="number">17020</span><span class="punctuation">,</span><span class="attr">&quot;title&quot;</span><span class="punctuation">:</span><span class="string">&quot;\u7f8e\u56fd\u8001\u5e74\u5b66\u672f\u4f1a\u8baeGSA&quot;</span><span class="punctuation">,</span><span class="attr">&quot;content&quot;</span><span class="punctuation">:</span><span class="string">&quot;\u6709\u65e0\u5144\u5f1f\u59d0\u59b9\u4e4b\u524d\u53bb\u8fc7\u7f8e\u56fd\u5b66\u672f\u5e74\u4f1aGSA\uff0c\u6c42\u52a9&quot;</span><span class="punctuation">,</span><span class="attr">&quot;user_id&quot;</span><span class="punctuation">:</span><span class="number">16872</span><span class="punctuation">,</span><span class="attr">&quot;reading&quot;</span><span class="punctuation">:</span><span class="number">243</span><span class="punctuation">,</span><span class="attr">&quot;contact_id&quot;</span><span class="punctuation">:</span><span class="number">16736</span><span class="punctuation">,</span><span class="attr">&quot;school_id&quot;</span><span class="punctuation">:</span><span class="number">1</span><span class="punctuation">,</span><span class="attr">&quot;classify_id&quot;</span><span class="punctuation">:</span><span class="number">2</span><span class="punctuation">,</span><span class="attr">&quot;created_at&quot;</span><span class="punctuation">:</span><span class="number">1718436786</span><span class="punctuation">,</span><span class="attr">&quot;images&quot;</span><span class="punctuation">:</span><span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span><span class="attr">&quot;art_like&quot;</span><span class="punctuation">:</span><span class="number">0</span><span class="punctuation">,</span><span class="attr">&quot;is_end&quot;</span><span class="punctuation">:</span><span class="number">0</span><span class="punctuation">,</span><span class="attr">&quot;is_top&quot;</span><span class="punctuation">:</span><span class="number">0</span><span class="punctuation">,</span><span class="attr">&quot;is_rec&quot;</span><span class="punctuation">:</span><span class="number">0</span><span class="punctuation">,</span><span class="attr">&quot;status&quot;</span><span class="punctuation">:</span><span class="number">1</span><span class="punctuation">,</span><span class="attr">&quot;account&quot;</span><span class="punctuation">:</span><span class="string">&quot;\u82f9\u679c\u53d1\u7b8d&quot;</span><span class="punctuation">,</span><span class="attr">&quot;avatar&quot;</span><span class="punctuation">:</span><span class="string">&quot;https:\/\/os.xiaouni.com\/uploadsimage\/2023\/09-01\/c3e65afd79583b01.jpg&quot;</span><span class="punctuation">,</span><span class="attr">&quot;zone_id&quot;</span><span class="punctuation">:</span><span class="number">4</span><span class="punctuation">,</span><span class="attr">&quot;is_like&quot;</span><span class="punctuation">:</span><span class="number">0</span><span class="punctuation">,</span><span class="attr">&quot;is_collect&quot;</span><span class="punctuation">:</span><span class="number">0</span><span class="punctuation">,</span><span class="attr">&quot;collect_count&quot;</span><span class="punctuation">:</span><span class="number">0</span><span class="punctuation">,</span><span class="attr">&quot;comment_count&quot;</span><span class="punctuation">:</span><span class="number">0</span><span class="punctuation">,</span><span class="attr">&quot;user&quot;</span><span class="punctuation">:</span><span class="punctuation">&#123;</span><span class="attr">&quot;id&quot;</span><span class="punctuation">:</span><span class="number">16872</span><span class="punctuation">,</span><span class="attr">&quot;is_authority&quot;</span><span class="punctuation">:</span><span class="number">0</span><span class="punctuation">,</span><span class="attr">&quot;nickname&quot;</span><span class="punctuation">:</span><span class="string">&quot;\u5c0f\u7ea2&quot;</span><span class="punctuation">,</span><span class="attr">&quot;portrait&quot;</span><span class="punctuation">:</span><span class="string">&quot;https:\/\/thirdwx.qlogo.cn\/mmopen\/vi_32\/ECkvJVPXNstK1G0syFKuAvko2dF3qibGKLich2mscnYPfiaDylZrLICCG9phvUKbBaDAuk8JgbVibYyyd1AWgs9Qqg\/132&quot;</span><span class="punctuation">,</span><span class="attr">&quot;leaver_color&quot;</span><span class="punctuation">:</span><span class="string">&quot;#FADC3A&quot;</span><span class="punctuation">,</span><span class="attr">&quot;leaver_name&quot;</span><span class="punctuation">:</span><span class="string">&quot;\u5927\u4e00&quot;</span><span class="punctuation">&#125;</span><span class="punctuation">,</span><span class="attr">&quot;contact&quot;</span><span class="punctuation">:</span><span class="punctuation">&#123;</span><span class="attr">&quot;id&quot;</span><span class="punctuation">:</span><span class="number">16736</span><span class="punctuation">,</span><span class="attr">&quot;money&quot;</span><span class="punctuation">:</span><span class="string">&quot;0&quot;</span><span class="punctuation">,</span><span class="attr">&quot;contact_way_id&quot;</span><span class="punctuation">:</span><span class="number">2</span><span class="punctuation">,</span><span class="attr">&quot;contact_info&quot;</span><span class="punctuation">:</span><span class="string">&quot;3076689048&quot;</span><span class="punctuation">,</span><span class="attr">&quot;contact_name&quot;</span><span class="punctuation">:</span><span class="string">&quot;&quot;</span><span class="punctuation">,</span><span class="attr">&quot;contact_way&quot;</span><span class="punctuation">:</span><span class="punctuation">&#123;</span><span class="attr">&quot;id&quot;</span><span class="punctuation">:</span><span class="number">2</span><span class="punctuation">,</span><span class="attr">&quot;name&quot;</span><span class="punctuation">:</span><span class="string">&quot;QQ&quot;</span><span class="punctuation">&#125;</span><span class="punctuation">&#125;</span><span class="punctuation">,</span><span class="attr">&quot;school&quot;</span><span class="punctuation">:</span><span class="punctuation">&#123;</span><span class="attr">&quot;id&quot;</span><span class="punctuation">:</span><span class="number">1</span><span class="punctuation">,</span><span class="attr">&quot;name&quot;</span><span class="punctuation">:</span><span class="string">&quot;\u534e\u897f&quot;</span><span class="punctuation">&#125;</span><span class="punctuation">,</span><span class="attr">&quot;classify&quot;</span><span class="punctuation">:</span><span class="punctuation">&#123;</span><span class="attr">&quot;id&quot;</span><span class="punctuation">:</span><span class="number">2</span><span class="punctuation">,</span><span class="attr">&quot;name&quot;</span><span class="punctuation">:</span><span class="string">&quot;\u4e07\u80fd\u6c42\u52a9&quot;</span><span class="punctuation">,</span><span class="attr">&quot;is_anonymous&quot;</span><span class="punctuation">:</span><span class="number">0</span><span class="punctuation">&#125;</span><span class="punctuation">&#125;</span><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>我们发现这个是json格式的内容，而且是以unicode进行编码的结果<br>我们进一步修改代码，获取帖子标题和内容</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="comment"># 发送http请求</span></span><br><span class="line">url = <span class="string">&#x27;https://u.xiaouni.com/user-api/content/article/info?id=17020&#x27;</span></span><br><span class="line">response = requests.get(url=url)</span><br><span class="line"><span class="comment"># json格式化</span></span><br><span class="line">json_data = json.loads(response.text)</span><br><span class="line"><span class="comment"># 获取标题和内容</span></span><br><span class="line">title = json_data[<span class="string">&#x27;data&#x27;</span>][<span class="string">&#x27;title&#x27;</span>]</span><br><span class="line">content = json_data[<span class="string">&#x27;data&#x27;</span>][<span class="string">&#x27;content&#x27;</span>]</span><br><span class="line"><span class="comment"># 打印标题和内容</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;title:\t&#x27;</span>+title,<span class="string">&#x27;\ncontent:&#x27;</span>+content)</span><br></pre></td></tr></table></figure>
+<p>结果如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">title:	美国老年学术会议GSA </span><br><span class="line">content:有无兄弟姐妹之前去过美国学术年会GSA，求助</span><br></pre></td></tr></table></figure>
+<p>成功获取集市帖子</p>
+<h2 id="第三步，批量获取帖子"><a href="#第三步，批量获取帖子" class="headerlink" title="第三步，批量获取帖子"></a>第三步，批量获取帖子</h2><p>我们改进代码，获取最近的300条帖子，写到一个txt文件中方便后续使用</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">getContent</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, <span class="built_in">id</span>: <span class="built_in">int</span></span>):</span><br><span class="line">        <span class="variable language_">self</span>.url = <span class="string">&#x27;https://u.xiaouni.com/user-api/content/article/info?id=&#x27;</span> + <span class="built_in">str</span>(<span class="built_in">id</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">run</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="comment"># 发送http请求</span></span><br><span class="line">        response = requests.get(url=<span class="variable language_">self</span>.url)</span><br><span class="line">        <span class="comment"># json格式化</span></span><br><span class="line">        json_data = json.loads(response.text)</span><br><span class="line">        <span class="comment"># 获取状态码，标题和内容</span></span><br><span class="line">        status_code = json_data[<span class="string">&#x27;code&#x27;</span>]</span><br><span class="line">        <span class="keyword">if</span> status_code == <span class="number">200</span>:</span><br><span class="line">            title = json_data[<span class="string">&#x27;data&#x27;</span>][<span class="string">&#x27;title&#x27;</span>]</span><br><span class="line">            content = json_data[<span class="string">&#x27;data&#x27;</span>][<span class="string">&#x27;content&#x27;</span>]</span><br><span class="line">            <span class="comment"># 返回标题和内容</span></span><br><span class="line">            <span class="keyword">return</span> <span class="string">&#x27;[&#x27;</span>+title+<span class="string">&#x27;]:&#x27;</span>+content+<span class="string">&#x27;\n&#x27;</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&#x27;none&#x27;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">301</span>):</span><br><span class="line">    <span class="built_in">id</span> = <span class="number">17020</span> - i</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br><span class="line">    text = getContent(<span class="built_in">id</span>).run()</span><br><span class="line">    <span class="keyword">if</span> text != <span class="string">&#x27;none&#x27;</span>:</span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;content.txt&#x27;</span>, <span class="string">&#x27;a&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">            f.write(text)</span><br></pre></td></tr></table></figure>
+<p>结果如下<br><img src="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615162946660-1558365347.png" class="lazyload" data-srcset="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615162946660-1558365347.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"></p>
+<h2 id="第四步，绘制词云图"><a href="#第四步，绘制词云图" class="headerlink" title="第四步，绘制词云图"></a>第四步，绘制词云图</h2><p>编写一个新的python脚本，将上面获取到的帖子内容绘制成词云图<br>这步需要安装jieba库（注：这里只是jieba库的简单运用，并未排除一些无意义的词，若要更加出色的表现，可进行jieba库的学习）和wordcloud库</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install jieba</span><br><span class="line">pip install wordcloud</span><br></pre></td></tr></table></figure>
+<p>接下来编写代码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> jieba <span class="comment"># 用于文章分词</span></span><br><span class="line"><span class="keyword">import</span> wordcloud <span class="comment"># 用于将词语生成词云图</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 读取文本</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;content.txt&quot;</span>, encoding=<span class="string">&quot;utf-8&quot;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    s = f.read()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成分词列表</span></span><br><span class="line">ls = jieba.lcut(s)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 从后向前遍历列表,删除长度小于2的元素</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(ls) - <span class="number">1</span>, -<span class="number">1</span>, -<span class="number">1</span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(ls[i]) &lt; <span class="number">2</span>:</span><br><span class="line">        <span class="keyword">del</span> ls[i]</span><br><span class="line"></span><br><span class="line">text = <span class="string">&#x27; &#x27;</span>.join(ls)  <span class="comment"># 连接成字符串</span></span><br><span class="line">stopwords = [<span class="string">&quot;可以&quot;</span>, <span class="string">&quot;一个&quot;</span>, <span class="string">&quot;有没有&quot;</span>]  <span class="comment"># 去掉不需要显示的词</span></span><br><span class="line">wc = wordcloud.WordCloud(font_path=<span class="string">&quot;msyh.ttc&quot;</span>, width=<span class="number">2560</span>, height=<span class="number">1600</span>, background_color=<span class="string">&#x27;white&#x27;</span>, max_words=<span class="number">300</span>,</span><br><span class="line">                         stopwords=stopwords)  <span class="comment"># msyh.ttc电脑本地字体，防止中文乱码</span></span><br><span class="line">wc.generate(text)  <span class="comment"># 生成词云图</span></span><br><span class="line">wc.to_file(<span class="string">&quot;1.png&quot;</span>)  <span class="comment"># 保存词云图片</span></span><br></pre></td></tr></table></figure>
+<p>打开1.png结果如下 (词语出现频率越高，在词云图中的字就越大)</p>
+<p><img src="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615163518403-1001674182.png" class="lazyload" data-srcset="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615163518403-1001674182.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"></p>
+<p>成功实现词云图绘制</p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-07-20T22:08:11+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Jul 20, 2024</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.jeanhua.cn/2024/06/15/986d735abcc0/&title=python爬取校园集市帖子并生成词云图 - jeanhua's blog&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://blog.jeanhua.cn/2024/06/15/986d735abcc0/&title=python爬取校园集市帖子并生成词云图 - jeanhua's blog&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.jeanhua.cn/2024/06/15/986d735abcc0/&title=python爬取校园集市帖子并生成词云图 - jeanhua's blog&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2024/06/17/c85462058ea9/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>关于Visual Studio报错scanf_s等*_s代码报错的解决方案</p>
+          <p class='content'>
+
+问题：用visual studio写代码时经常碰到scanf报错,strcpy报错等情况
+但是又不想改代码怎么办呢？解决办法
+点击”项目”
+点击”属性”
+“C&#x2F;C++”
+“常规”
+...</p>
+        </a>
+      
+      
+        <a class='next' href='/2024/06/15/f349664957c7/'>
+          <p class='title'>python爬虫获取百度热搜<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+
+注：本篇学习需要python基础，html基础，xpath基础
+前言：在上篇中，我们学习了怎么用python发送网页请求来获取网站的源代码，在这篇中，我们将进一步学习
+本篇目标：利用pyth...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2024/06/15/986d735abcc0/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2774,97 +2775,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://q1.qlogo.cn/g?b=qq&nk=2207739460&src_uin=www.jlwz.cn&s=0'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">jeanhua's blog</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/jeanhua_official@outlook.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/jeanhua"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://music.163.com/#/playlist?id=5263725127"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-
-    
-  
-
-  
-    
-    
-      
-
-    
-  
-
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%8C%E5%88%86%E6%9E%90%E8%AF%B7%E6%B1%82"><span class="toc-text">第一步，分析请求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%8C%E7%BC%96%E5%86%99%E4%BB%A3%E7%A0%81"><span class="toc-text">第二步，编写代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5%EF%BC%8C%E6%89%B9%E9%87%8F%E8%8E%B7%E5%8F%96%E5%B8%96%E5%AD%90"><span class="toc-text">第三步，批量获取帖子</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5%EF%BC%8C%E7%BB%98%E5%88%B6%E8%AF%8D%E4%BA%91%E5%9B%BE"><span class="toc-text">第四步，绘制词云图</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2892,13 +2844,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2907,14 +2860,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -3412,7 +3365,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到我的博客，本项目采用hexo框架"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.jeanhua.cn/","name":"jeanhua's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.jeanhua.cn/archives/","name":"Archive"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","keywords":"blog","description":"欢迎来到我的博客，本项目采用hexo框架","author":{"@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/","description":"欢迎来到我的博客，本项目采用hexo框架"},"publisher":{"@type":"Organization","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.jeanhua.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"欢迎来到我的博客，本项目采用hexo框架","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/"},"publisher":{"@type":"Organization","name":"jeanhua's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到我的博客，本项目采用hexo框架"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.jeanhua.cn/","name":"jeanhua's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.jeanhua.cn/2024/06/15/986d735abcc0/","name":"python爬取校园集市帖子并生成词云图"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","keywords":"blog","description":"欢迎来到我的博客，本项目采用hexo框架","author":{"@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/","description":"欢迎来到我的博客，本项目采用hexo框架"},"publisher":{"@type":"Organization","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.jeanhua.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"python爬取校园集市帖子并生成词云图","description":"欢迎来到我的博客，本项目采用hexo框架","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.jeanhua.cn/2024/06/15/986d735abcc0/"},"author":{"@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/"},"publisher":{"@type":"Organization","name":"jeanhua's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.jeanhua.cn/2024/06/15/986d735abcc0/","wordCount":0,"datePublished":"2024-06-15T08:37:00.000Z","dateModified":"2024-07-20T14:08:11.799Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
