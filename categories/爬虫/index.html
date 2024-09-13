@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://blog.jeanhua.cn/tags/笔记/"/>
+  <link rel="canonical" href="http://blog.jeanhua.cn/categories/爬虫/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -35,13 +35,13 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="jeanhua's blog" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>Tag: 笔记 - jeanhua's blog</title>
+  <title>Category: 爬虫 - jeanhua's blog</title>
   <meta name="keywords" content="blog">
   <meta desc name="description" content="欢迎来到我的博客，本项目采用hexo框架 - jeanhua - jeanhua's blog">
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="jeanhua&#39;s blog">
-<meta property="og:url" content="http://blog.jeanhua.cn/tags/%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:url" content="http://blog.jeanhua.cn/categories/%E7%88%AC%E8%99%AB/index.html">
 <meta property="og:site_name" content="jeanhua&#39;s blog">
 <meta property="og:description" content="欢迎来到我的博客，本项目采用hexo框架">
 <meta property="og:locale" content="en_US">
@@ -2527,6 +2527,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
+          
+        
       
     
     
@@ -2534,7 +2538,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.jeanhua.cn/2024/04/26/b8db80ffa065/">
+  <link itemprop="mainEntityOfPage" href="http://blog.jeanhua.cn/2024/06/15/986d735abcc0/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="jeanhua's blog">
   </span>
@@ -2552,8 +2556,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/04/26/b8db80ffa065/"  itemprop="url">
-        高等数学笔记
+      <a href="/2024/06/15/986d735abcc0/"  itemprop="url">
+        python爬取校园集市帖子并生成词云图
       </a>
     </h2>
   
@@ -2562,18 +2566,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
 
-高等数学概念、公式及常用结论内容整理来源于网络，可能存在疏漏和错误，若有侵权请 联系作者 jeanhua_official@outlook.com 删除
-[toc]
-第一章 函数 极限 连续常用的基本极限
-1-无穷型 极限常用结论
-常用的等价无穷小
+注：本篇需要python基础，json基础
 
-
-
-x→∞，有时也可以使用等价无穷小代换。只要函数内部是无穷小即可。比如，x→∞时，sin(1&#x2F;x)~1&#x2F;x。
-
-
-洛...
+前言：上篇我们学习了怎么用python获取百度热搜，在这篇中，我们将进一步学习，利用python爬取校园集市帖子并生成词云图
+懒的话直接点这里进入完整代码仓库🤣
+[toc]灵感背景：经常在群里看见机器人转发的校园集市帖子，于是想要爬取下来分析一下
+第一步，分析请求 点击链接进入浏览器页面 按下F12打开浏览器开发者界面 点击网络，按下F5刷...
       
     
   </div>
@@ -2581,20 +2579,155 @@ x→∞，有时也可以使用等价无穷小代换。只要函数内部是无�
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-04-26T21:57:00+08:00">2024-04-26</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-06-15T16:37:00+08:00">2024-06-15</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/categories/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a>
+          <a class="category-link" href="/categories/%E7%88%AC%E8%99%AB/">爬虫</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" itemprop="url"><span itemprop="name">高等数学</span></a>
+              <a href="/categories/%E7%88%AC%E8%99%AB/" itemprop="url"><span itemprop="name">爬虫</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='/2024/04/26/b8db80ffa065/' itemprop="url">
+          <a class='readmore' href='/2024/06/15/986d735abcc0/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://blog.jeanhua.cn/2024/06/15/f349664957c7/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="jeanhua's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="jeanhua's blog">
+    <meta itemprop="description" content="欢迎来到我的博客，本项目采用hexo框架">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2024/06/15/f349664957c7/"  itemprop="url">
+        python爬虫获取百度热搜
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+
+注：本篇学习需要python基础，html基础，xpath基础
+前言：在上篇中，我们学习了怎么用python发送网页请求来获取网站的源代码，在这篇中，我们将进一步学习
+本篇目标：利用python爬虫获取百度热搜第一步，用浏览器打开百度热搜网站百度热搜网址 https://top.baidu.com/board?tab=realtime页面如下：
+第二步，按下F12键打开浏览器开发者界面，...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-06-15T15:13:00+08:00">2024-06-15</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E7%88%AC%E8%99%AB/">爬虫</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E7%88%AC%E8%99%AB/" itemprop="url"><span itemprop="name">爬虫</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2024/06/15/f349664957c7/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://blog.jeanhua.cn/2024/06/15/347ddd515696/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="jeanhua's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="jeanhua's blog">
+    <meta itemprop="description" content="欢迎来到我的博客，本项目采用hexo框架">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2024/06/15/347ddd515696/"  itemprop="url">
+        python爬虫入门
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+
+注：本篇需要python基础，html基础
+Python爬虫。相信大家对爬虫这个词都不陌生，那么什么是爬虫呢？简单来说，爬虫就是一只在网上爬行的虫子，它会根据我们设定的规则，自动地获取我们感兴趣的信息。而Python爬虫就是使用Python语言来编写这个虫子的程序。
+一、准备工作在开始编写Python爬虫之前，我们需要做一些准备工作。首先，确保你的电脑上已经安装了Python环境。然后，...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-06-15T14:36:00+08:00">2024-06-15</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E7%88%AC%E8%99%AB/">爬虫</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E7%88%AC%E8%99%AB/" itemprop="url"><span itemprop="name">爬虫</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2024/06/15/347ddd515696/' itemprop="url">
             Read More
           </a>
         </div>
@@ -3314,7 +3447,7 @@ x→∞，有时也可以使用等价无穷小代换。只要函数内部是无�
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到我的博客，本项目采用hexo框架"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.jeanhua.cn/","name":"jeanhua's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.jeanhua.cn/tags/笔记/","name":"笔记"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","keywords":"blog","description":"欢迎来到我的博客，本项目采用hexo框架","author":{"@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/","description":"欢迎来到我的博客，本项目采用hexo框架"},"publisher":{"@type":"Organization","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.jeanhua.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"欢迎来到我的博客，本项目采用hexo框架","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/"},"publisher":{"@type":"Organization","name":"jeanhua's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到我的博客，本项目采用hexo框架"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.jeanhua.cn/","name":"jeanhua's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.jeanhua.cn/categories/爬虫/","name":"爬虫"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","keywords":"blog","description":"欢迎来到我的博客，本项目采用hexo框架","author":{"@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/","description":"欢迎来到我的博客，本项目采用hexo框架"},"publisher":{"@type":"Organization","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.jeanhua.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"欢迎来到我的博客，本项目采用hexo框架","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/"},"publisher":{"@type":"Organization","name":"jeanhua's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
