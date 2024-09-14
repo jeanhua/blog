@@ -6,7 +6,7 @@
   <link href="http://blog.jeanhua.cn/atom.xml" rel="self"/>
   
   <link href="http://blog.jeanhua.cn/"/>
-  <updated>2024-09-14T13:36:28.704Z</updated>
+  <updated>2024-09-14T15:21:06.797Z</updated>
   <id>http://blog.jeanhua.cn/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客在云服务器和github之间的同步</title>
+    <link href="http://blog.jeanhua.cn/2024/09/14/ebdfcd8245d2/"/>
+    <id>http://blog.jeanhua.cn/2024/09/14/ebdfcd8245d2/</id>
+    <published>2024-09-14T15:05:15.000Z</published>
+    <updated>2024-09-14T15:21:06.797Z</updated>
+    
+    <content type="html"><![CDATA[<p>博客框架 <strong>hexo</strong>，网页服务器 <strong>apache2</strong></p><p>因为我的博客是放在云服务上的，然后又希望在GitHub上面同步，传统的办法是使用git把public里面的文件放到GitHub上面，然后手动将文件复制到云服务上，这就有一个问题，就是当文章删除的时候会导致删不掉，同时也很繁杂</p><p>网上有的办法普遍是在云服务上面弄个git仓库，总之一堆<strong>心烦意乱</strong>的配置，于是我在想有没有更<strong>简单</strong>的办法</p><p>🤣<strong>还真有</strong></p><p>只要本地仓库push到github，然后云服务器pull一下不就行了，直截了当</p><p>但是手动push然后pull确实也麻烦</p><p>python启动！</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> paramiko</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line"><span class="comment"># 处理本地数据</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;do.bat&quot;</span>,<span class="string">&#x27;w&#x27;</span>,encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.write(<span class="string">&quot;hexo clean &amp;&amp; hexo g &amp;&amp; hexo deploy&quot;</span>) <span class="comment">#不知道为什么python的os.system()会报错，所以写一个bat算了</span></span><br><span class="line">    f.close()</span><br><span class="line"></span><br><span class="line">os.system(<span class="string">&quot;.\\do.bat&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;本地处理完成&quot;</span>)</span><br><span class="line"><span class="comment"># SSH连接信息</span></span><br><span class="line">hostname = <span class="string">&#x27;121.37.193.158&#x27;</span></span><br><span class="line">port = <span class="number">22</span>  <span class="comment"># 默认SSH端口是22，根据实际情况修改</span></span><br><span class="line">username = <span class="string">&#x27;root&#x27;</span><span class="comment">#这里换成账户</span></span><br><span class="line">password = <span class="string">&#x27;******&#x27;</span><span class="comment">#这里换成你的云服务器密码</span></span><br><span class="line">command = <span class="string">&#x27;cd /var/www/blog/ &amp;&amp; git pull origin main&#x27;</span> <span class="comment">#换成云服务对应的仓库地址</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建SSH对象</span></span><br><span class="line">ssh = paramiko.SSHClient()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 允许连接不在know_hosts文件中的主机</span></span><br><span class="line">ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 连接服务器</span></span><br><span class="line">ssh.connect(hostname, port, username, password)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行命令</span></span><br><span class="line">stdin, stdout, stderr = ssh.exec_command(command)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;输出：&quot;</span>, stdout.read().decode())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;错误：&quot;</span>, stderr.read().decode())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 关闭连接</span></span><br><span class="line">ssh.close()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;完成&quot;</span>)</span><br></pre></td></tr></table></figure><p>完工！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;博客框架 &lt;strong&gt;hexo&lt;/strong&gt;，网页服务器 &lt;strong&gt;apache2&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因为我的博客是放在云服务上的，然后又希望在GitHub上面同步，传统的办法是使用git把public里面的文件放到GitHub上面，然后手动将文</summary>
+      
+    
+    
+    
+    <category term="方法论" scheme="http://blog.jeanhua.cn/categories/%E6%96%B9%E6%B3%95%E8%AE%BA/"/>
+    
+    
+    <category term="python" scheme="http://blog.jeanhua.cn/tags/python/"/>
+    
+    <category term="服务器" scheme="http://blog.jeanhua.cn/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    <category term="博客" scheme="http://blog.jeanhua.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="ssh" scheme="http://blog.jeanhua.cn/tags/ssh/"/>
+    
+  </entry>
   
   <entry>
     <title>网站推荐</title>
