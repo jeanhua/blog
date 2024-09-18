@@ -723,103 +723,6 @@ button {
   -moz-opacity: 1;
   border-bottom: 2px solid var(--color-site-inner);
 }
-.cover-wrapper.dock .menu,
-.cover-wrapper.featured .menu,
-.cover-wrapper.focus .menu {
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-}
-.cover-wrapper.dock .menu .list-h a,
-.cover-wrapper.featured .menu .list-h a,
-.cover-wrapper.focus .menu .list-h a {
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  align-items: center;
-  padding: 12px;
-  line-height: 24px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-bottom: none;
-  text-align: center;
-  align-content: flex-end;
-  color: rgba(68,68,68,0.7);
-  font-size: 1.5rem;
-}
-@media screen and (max-width: 500px) {
-  .cover-wrapper.dock .menu .list-h a,
-  .cover-wrapper.featured .menu .list-h a,
-  .cover-wrapper.focus .menu .list-h a {
-    padding: 12px 8px;
-  }
-}
-.cover-wrapper.dock .menu .list-h a i,
-.cover-wrapper.featured .menu .list-h a i,
-.cover-wrapper.focus .menu .list-h a i {
-  margin: 8px;
-}
-.cover-wrapper.dock .menu .list-h a p,
-.cover-wrapper.featured .menu .list-h a p,
-.cover-wrapper.focus .menu .list-h a p {
-  font-size: 0.875rem;
-}
-.cover-wrapper.dock .menu .list-h a.active,
-.cover-wrapper.featured .menu .list-h a.active,
-.cover-wrapper.focus .menu .list-h a.active {
-  background: var(--color-card);
-  backdrop-filter: none;
-}
-.cover-wrapper.dock .menu .list-h a.active i,
-.cover-wrapper.featured .menu .list-h a.active i,
-.cover-wrapper.focus .menu .list-h a.active i,
-.cover-wrapper.dock .menu .list-h a.active i+p,
-.cover-wrapper.featured .menu .list-h a.active i+p,
-.cover-wrapper.focus .menu .list-h a.active i+p {
-  color: #3dd9b6;
-}
-.cover-wrapper.dock .menu .list-h a.active img+p,
-.cover-wrapper.featured .menu .list-h a.active img+p,
-.cover-wrapper.focus .menu .list-h a.active img+p {
-  color: var(--color-text);
-}
-.cover-wrapper.dock .menu .list-h a:hover,
-.cover-wrapper.featured .menu .list-h a:hover,
-.cover-wrapper.focus .menu .list-h a:hover {
-  background: var(--color-card);
-}
-.cover-wrapper.focus .menu {
-  transition: all 0.28s ease;
-  -webkit-transition: all 0.28s ease;
-  -khtml-transition: all 0.28s ease;
-  -moz-transition: all 0.28s ease;
-  -o-transition: all 0.28s ease;
-  -ms-transition: all 0.28s ease;
-}
-.cover-wrapper.focus .menu .list-h {
-  margin: 2px;
-}
-.cover-wrapper.focus .menu:hover {
-  background: rgba(255,255,255,0.5);
-}
-@supports (backdrop-filter: blur(20px)) {
-  .cover-wrapper.focus .menu:hover {
-    background: rgba(255,255,255,0.5);
-    backdrop-filter: saturate(200%) blur(20px);
-  }
-}
-.cover-wrapper.focus .menu .list-h a {
-  margin: 2px;
-}
-.cover-wrapper.focus .menu .list-h a:hover {
-  opacity: 1;
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  background: var(--color-card);
-}
 @font-face {
   font-family: 'UbuntuMono';
   src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf");
@@ -1733,7 +1636,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg"},
-    lastupdate: new Date(1726650119487),
+    lastupdate: new Date(1726650163428),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2430,7 +2333,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper post focus' style="display: none;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://pic.imgdb.cn/item/66935fffd9c307b7e95250b5.jpg"></div>
 
@@ -2443,6 +2346,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   </div>
   <div class='bottom'>
+    
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <input type="text" class="input u-search-input" placeholder="A Wonderful Theme for Hexo" />
+          <i class="icon fa-solid fa-search fa-fw"></i>
+        </form>
+      </div>
+    
     <div class='menu navigation'>
       <div class='list-h'>
         
@@ -2451,42 +2362,42 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-http:wwwjeanhuacn">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5c3.svg'><p>主页</p>
+              <p>主页</p>
             </a>
           
             <a target="_blank" rel="noopener" href="https://jsj.top/f/u91uTH"
               
               
               active-action="action-https:jsjtopfu91uTH">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f516.svg'><p>留言</p>
+              <p>留言</p>
             </a>
           
             <a target="_blank" rel="noopener" href="http://res.jeanhua.cn"
               
               
               active-action="action-http:resjeanhuacn">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f396.svg'><p>资源</p>
+              <p>资源</p>
             </a>
           
             <a target="_blank" rel="noopener" href="https://github.com/The-Brotherhood-of-SCU"
               
               
               active-action="action-https:githubcomThe-Brotherhood-of-SCU">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f389.svg'><p>组织</p>
+              <p>组织</p>
             </a>
           
             <a href="/archives/"
               
               
               active-action="action-archives">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f4f0.svg'><p>博客</p>
+              <p>博客</p>
             </a>
           
             <a target="_blank" rel="noopener" href="https://github.com/jeanhua"
               
               
               active-action="action-https:githubcomjeanhua">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f9ec.svg'><p>代码</p>
+              <p>代码</p>
             </a>
           
         
