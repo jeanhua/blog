@@ -37,17 +37,21 @@
   <!-- 页面元数据 -->
   <title>python爬虫获取百度热搜 - jeanhua's blog</title>
   <meta name="keywords" content="python,爬虫,blog">
-  <meta desc name="description" content="欢迎来到我的博客，本项目采用hexo框架 - jeanhua - jeanhua's blog">
+  <meta desc name="description" content="
+
+注：本篇学习需要python基础，html基础，xpath基础
+前言：在上篇中，我们学习了怎么用python发送网页请求来获取网站的源代码，在这篇中，我们将进一步学习
+本篇目标：利用python爬虫获取百度热搜 - jeanhua - jeanhua's blog">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="python爬虫获取百度热搜">
 <meta property="og:url" content="http://blog.jeanhua.cn/2024/06/15/f349664957c7/index.html">
 <meta property="og:site_name" content="jeanhua&#39;s blog">
-<meta property="og:description" content="注：本篇学习需要python基础，html基础，xpath基础 前言：在上篇中，我们学习了怎么用python发送网页请求来获取网站的源代码，在这篇中，我们将进一步学习 本篇目标：利用python爬虫获取百度热搜第一步，用浏览器打开百度热搜网站百度热搜网址 https:&#x2F;&#x2F;top.baidu.com&#x2F;board?tab&#x3D;realtime页面如下： 第二步，按下F12键打开浏览器开发者界面，找到热">
+<meta property="og:description" content="注：本篇学习需要python基础，html基础，xpath基础 前言：在上篇中，我们学习了怎么用python发送网页请求来获取网站的源代码，在这篇中，我们将进一步学习 本篇目标：利用python爬虫获取百度热搜">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2024-06-15T07:13:00.000Z">
-<meta property="article:modified_time" content="2024-09-13T04:24:19.790Z">
+<meta property="article:modified_time" content="2024-09-18T00:27:06.482Z">
 <meta property="article:author" content="jeanhua">
 <meta property="article:tag" content="python">
 <meta property="article:tag" content="爬虫">
@@ -1748,7 +1752,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg"},
-    lastupdate: new Date(1726619050412),
+    lastupdate: new Date(1726619252138),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2615,7 +2619,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <h6 id="注：本篇学习需要python基础，html基础，xpath基础"><a href="#注：本篇学习需要python基础，html基础，xpath基础" class="headerlink" title="注：本篇学习需要python基础，html基础，xpath基础"></a>注：本篇学习需要python基础，html基础，xpath基础</h6><hr>
 <p>前言：在上篇中，我们学习了怎么用python发送网页请求来获取网站的源代码，在这篇中，我们将进一步学习</p>
-<h5 id="本篇目标：利用python爬虫获取百度热搜"><a href="#本篇目标：利用python爬虫获取百度热搜" class="headerlink" title="本篇目标：利用python爬虫获取百度热搜"></a>本篇目标：利用python爬虫获取百度热搜</h5><h2 id="第一步，用浏览器打开百度热搜网站"><a href="#第一步，用浏览器打开百度热搜网站" class="headerlink" title="第一步，用浏览器打开百度热搜网站"></a>第一步，用浏览器打开百度热搜网站</h2><p>百度热搜网址 <a target="_blank" rel="noopener" href="https://top.baidu.com/board?tab=realtime">https://top.baidu.com/board?tab=realtime</a><br>页面如下：<br><img src="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615144119375-1726491928.png" class="lazyload" data-srcset="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615144119375-1726491928.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"></p>
+<h5 id="本篇目标：利用python爬虫获取百度热搜"><a href="#本篇目标：利用python爬虫获取百度热搜" class="headerlink" title="本篇目标：利用python爬虫获取百度热搜"></a>本篇目标：利用python爬虫获取百度热搜</h5><span id="more"></span>
+
+<h2 id="第一步，用浏览器打开百度热搜网站"><a href="#第一步，用浏览器打开百度热搜网站" class="headerlink" title="第一步，用浏览器打开百度热搜网站"></a>第一步，用浏览器打开百度热搜网站</h2><p>百度热搜网址 <a target="_blank" rel="noopener" href="https://top.baidu.com/board?tab=realtime">https://top.baidu.com/board?tab=realtime</a><br>页面如下：<br><img src="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615144119375-1726491928.png" class="lazyload" data-srcset="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615144119375-1726491928.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"></p>
 <h2 id="第二步，按下F12键打开浏览器开发者界面，找到热搜文本元素"><a href="#第二步，按下F12键打开浏览器开发者界面，找到热搜文本元素" class="headerlink" title="第二步，按下F12键打开浏览器开发者界面，找到热搜文本元素"></a>第二步，按下F12键打开浏览器开发者界面，找到热搜文本元素</h2><p><img src="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615144812937-572086183.png" class="lazyload" data-srcset="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615144812937-572086183.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"></p>
 <h2 id="第三步，右键单击文本元素复制Xpath"><a href="#第三步，右键单击文本元素复制Xpath" class="headerlink" title="第三步，右键单击文本元素复制Xpath"></a>第三步，右键单击文本元素复制Xpath</h2><p><img src="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615144943974-1230257057.png" class="lazyload" data-srcset="https://img2024.cnblogs.com/blog/3318028/202406/3318028-20240615144943974-1230257057.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"></p>
 <h2 id="第四步，编写代码"><a href="#第四步，编写代码" class="headerlink" title="第四步，编写代码"></a>第四步，编写代码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> lxml <span class="keyword">import</span> etree</span><br><span class="line"><span class="comment"># 发送HTTP请求获取网页内容</span></span><br><span class="line">url = <span class="string">&#x27;https://top.baidu.com/board?tab=realtime&#x27;</span></span><br><span class="line">response = requests.get(url)</span><br><span class="line"><span class="comment"># 解析网页代码</span></span><br><span class="line">doc = etree.HTML(response.text)</span><br><span class="line"><span class="comment"># 寻找Xpath结果</span></span><br><span class="line">result = doc.xpath(<span class="string">r&#x27;//*[@id=&quot;sanRoot&quot;]/main/div[2]/div/div[2]/div[2]/div[2]/a/div[1]/text()&#x27;</span>) <span class="comment">#这里粘贴复制下来的xpath</span></span><br><span class="line"><span class="comment"># 打印结果</span></span><br><span class="line"><span class="built_in">print</span>(result[<span class="number">0</span>])</span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -2658,7 +2664,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               <div class="license-meta-item">
                 <div class="license-meta-title">Update</div>
-                <div class="license-meta-text">Sep 13, 2024</div>
+                <div class="license-meta-text">Sep 18, 2024</div>
               </div>
               
               
@@ -2693,10 +2699,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-13T12:24:19+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-18T08:27:06+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Sep 13, 2024</p>
+    <p>更新于：Sep 18, 2024</p>
   </a>
 </div>
 
@@ -2719,7 +2725,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.jeanhua.cn/2024/06/15/f349664957c7/&title=python爬虫获取百度热搜 - jeanhua's blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.jeanhua.cn/2024/06/15/f349664957c7/&title=python爬虫获取百度热搜 - jeanhua's blog&summary=
+
+注：本篇学习需要python基础，html基础，xpath基础
+前言：在上篇中，我们学习了怎么用python发送网页请求来获取网站的源代码，在这篇中，我们将进一步学习
+本篇目标：利用python爬虫获取百度热搜"
           
           >
           
@@ -2731,7 +2741,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://blog.jeanhua.cn/2024/06/15/f349664957c7/&title=python爬虫获取百度热搜 - jeanhua's blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://blog.jeanhua.cn/2024/06/15/f349664957c7/&title=python爬虫获取百度热搜 - jeanhua's blog&summary=
+
+注：本篇学习需要python基础，html基础，xpath基础
+前言：在上篇中，我们学习了怎么用python发送网页请求来获取网站的源代码，在这篇中，我们将进一步学习
+本篇目标：利用python爬虫获取百度热搜"
           
           >
           
@@ -2743,7 +2757,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.jeanhua.cn/2024/06/15/f349664957c7/&title=python爬虫获取百度热搜 - jeanhua's blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.jeanhua.cn/2024/06/15/f349664957c7/&title=python爬虫获取百度热搜 - jeanhua's blog&summary=
+
+注：本篇学习需要python基础，html基础，xpath基础
+前言：在上篇中，我们学习了怎么用python发送网页请求来获取网站的源代码，在这篇中，我们将进一步学习
+本篇目标：利用python爬虫获取百度热搜"
           
           >
           
@@ -2791,7 +2809,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 注：本篇需要python基础，json基础
 
 前言：上篇我们学习了怎么用python获取百度热搜，在这篇中，我们将进一步学习，利用python爬取校园集市帖子并生成词云图
-懒的话直接点这里进...</p>
+
+
+懒的话直接点这...</p>
         </a>
       
       
@@ -3433,7 +3453,7 @@ Python爬虫。相信大家对爬虫这个词都不陌生，那么什么是爬�
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到我的博客，本项目采用hexo框架"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.jeanhua.cn/","name":"jeanhua's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.jeanhua.cn/categories/爬虫/","name":"爬虫"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.jeanhua.cn/2024/06/15/f349664957c7/","name":"python爬虫获取百度热搜"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","keywords":"blog","description":"欢迎来到我的博客，本项目采用hexo框架","author":{"@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/","description":"欢迎来到我的博客，本项目采用hexo框架"},"publisher":{"@type":"Organization","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.jeanhua.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"python爬虫获取百度热搜","description":"欢迎来到我的博客，本项目采用hexo框架","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.jeanhua.cn/2024/06/15/f349664957c7/"},"author":{"@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/"},"publisher":{"@type":"Organization","name":"jeanhua's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.jeanhua.cn/2024/06/15/f349664957c7/","wordCount":0,"datePublished":"2024-06-15T07:13:00.000Z","dateModified":"2024-09-13T04:24:19.790Z","articleSection":"爬虫","keywords":"python,爬虫","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到我的博客，本项目采用hexo框架"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.jeanhua.cn/","name":"jeanhua's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.jeanhua.cn/categories/爬虫/","name":"爬虫"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.jeanhua.cn/2024/06/15/f349664957c7/","name":"python爬虫获取百度热搜"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","keywords":"blog","description":"欢迎来到我的博客，本项目采用hexo框架","author":{"@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/","description":"欢迎来到我的博客，本项目采用hexo框架"},"publisher":{"@type":"Organization","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.jeanhua.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"python爬虫获取百度热搜","description":"\n\n注：本篇学习需要python基础，html基础，xpath基础\n前言：在上篇中，我们学习了怎么用python发送网页请求来获取网站的源代码，在这篇中，我们将进一步学习\n本篇目标：利用python爬虫获取百度热搜","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.jeanhua.cn/2024/06/15/f349664957c7/"},"author":{"@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/"},"publisher":{"@type":"Organization","name":"jeanhua's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.jeanhua.cn/2024/06/15/f349664957c7/","wordCount":107,"datePublished":"2024-06-15T07:13:00.000Z","dateModified":"2024-09-18T00:27:06.482Z","articleSection":"爬虫","keywords":"python,爬虫","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

@@ -37,17 +37,18 @@
   <!-- 页面元数据 -->
   <title>博客在云服务器和github之间的同步 - jeanhua's blog</title>
   <meta name="keywords" content="python,服务器,博客,ssh,blog">
-  <meta desc name="description" content="欢迎来到我的博客，本项目采用hexo框架 - jeanhua - jeanhua's blog">
+  <meta desc name="description" content="博客框架 hexo，网页服务器 apache2
+因为我的博客是放在云服务上的，然后又希望在GitHub上面同步，传统的办法是使用git把public里面的文件放到GitHub上面，然后手动将文件复制到云服务上，这就有一个问题，就是当文章删除的时候会导致删不掉，同时也很繁杂。 - jeanhua - jeanhua's blog">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="博客在云服务器和github之间的同步">
 <meta property="og:url" content="http://blog.jeanhua.cn/2024/09/14/ebdfcd8245d2/index.html">
 <meta property="og:site_name" content="jeanhua&#39;s blog">
-<meta property="og:description" content="博客框架 hexo，网页服务器 apache2 因为我的博客是放在云服务上的，然后又希望在GitHub上面同步，传统的办法是使用git把public里面的文件放到GitHub上面，然后手动将文件复制到云服务上，这就有一个问题，就是当文章删除的时候会导致删不掉，同时也很繁杂 网上有的办法普遍是在云服务上面弄个git仓库，总之一堆心烦意乱的配置，于是我在想有没有更简单的办法 🤣还真有 只要本地仓库p">
+<meta property="og:description" content="博客框架 hexo，网页服务器 apache2 因为我的博客是放在云服务上的，然后又希望在GitHub上面同步，传统的办法是使用git把public里面的文件放到GitHub上面，然后手动将文件复制到云服务上，这就有一个问题，就是当文章删除的时候会导致删不掉，同时也很繁杂。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2024-09-14T15:05:15.000Z">
-<meta property="article:modified_time" content="2024-09-14T15:21:06.797Z">
+<meta property="article:modified_time" content="2024-09-18T00:25:53.568Z">
 <meta property="article:author" content="jeanhua">
 <meta property="article:tag" content="python">
 <meta property="article:tag" content="服务器">
@@ -1750,7 +1751,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg"},
-    lastupdate: new Date(1726619050412),
+    lastupdate: new Date(1726619252138),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2614,7 +2615,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
     <p>博客框架 <strong>hexo</strong>，网页服务器 <strong>apache2</strong></p>
-<p>因为我的博客是放在云服务上的，然后又希望在GitHub上面同步，传统的办法是使用git把public里面的文件放到GitHub上面，然后手动将文件复制到云服务上，这就有一个问题，就是当文章删除的时候会导致删不掉，同时也很繁杂</p>
+<p>因为我的博客是放在云服务上的，然后又希望在GitHub上面同步，传统的办法是使用git把public里面的文件放到GitHub上面，然后手动将文件复制到云服务上，这就有一个问题，就是当文章删除的时候会导致删不掉，同时也很繁杂。</p>
+<span id="more"></span>
+
 <p>网上有的办法普遍是在云服务上面弄个git仓库，总之一堆<strong>心烦意乱</strong>的配置，于是我在想有没有更<strong>简单</strong>的办法</p>
 <p>🤣<strong>还真有</strong></p>
 <p>只要本地仓库push到github，然后云服务器pull一下不就行了，直截了当</p>
@@ -2651,6 +2654,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                 <div class="license-meta-text">Sep 14, 2024</div>
               </div>
               
+              <div class="license-meta-item">
+                <div class="license-meta-title">Update</div>
+                <div class="license-meta-text">Sep 18, 2024</div>
+              </div>
+              
               
               <div class="license-meta-item">
                 <div class="license-meta-title">License</div>
@@ -2683,10 +2691,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-14T23:21:06+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-18T08:25:53+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Sep 14, 2024</p>
+    <p>更新于：Sep 18, 2024</p>
   </a>
 </div>
 
@@ -2709,7 +2717,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.jeanhua.cn/2024/09/14/ebdfcd8245d2/&title=博客在云服务器和github之间的同步 - jeanhua's blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.jeanhua.cn/2024/09/14/ebdfcd8245d2/&title=博客在云服务器和github之间的同步 - jeanhua's blog&summary=博客框架 hexo，网页服务器 apache2
+因为我的博客是放在云服务上的，然后又希望在GitHub上面同步，传统的办法是使用git把public里面的文件放到GitHub上面，然后手动将文件复制到云服务上，这就有一个问题，就是当文章删除的时候会导致删不掉，同时也很繁杂。"
           
           >
           
@@ -2721,7 +2730,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://blog.jeanhua.cn/2024/09/14/ebdfcd8245d2/&title=博客在云服务器和github之间的同步 - jeanhua's blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://blog.jeanhua.cn/2024/09/14/ebdfcd8245d2/&title=博客在云服务器和github之间的同步 - jeanhua's blog&summary=博客框架 hexo，网页服务器 apache2
+因为我的博客是放在云服务上的，然后又希望在GitHub上面同步，传统的办法是使用git把public里面的文件放到GitHub上面，然后手动将文件复制到云服务上，这就有一个问题，就是当文章删除的时候会导致删不掉，同时也很繁杂。"
           
           >
           
@@ -2733,7 +2743,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.jeanhua.cn/2024/09/14/ebdfcd8245d2/&title=博客在云服务器和github之间的同步 - jeanhua's blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.jeanhua.cn/2024/09/14/ebdfcd8245d2/&title=博客在云服务器和github之间的同步 - jeanhua's blog&summary=博客框架 hexo，网页服务器 apache2
+因为我的博客是放在云服务上的，然后又希望在GitHub上面同步，传统的办法是使用git把public里面的文件放到GitHub上面，然后手动将文件复制到云服务上，这就有一个问题，就是当文章删除的时候会导致删不掉，同时也很繁杂。"
           
           >
           
@@ -2778,7 +2789,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>越想越气，遂作此篇</p>
           <p class='content'>故事背景：今天下午刚吃完饭，随手看了眼QQ，群里正在讨论家教的事情，刚好我正在做家教和家教代理，于是上演了此事：
 
-我最讨厌那种站在自己的角度衡量别人的人，不顾能力和阅历的差别，不顾客观事实，自...</p>
+
+
+我最讨厌那种站在自己的角度衡量别人的人，不顾能力和阅历的差别，不顾客观事实...</p>
         </a>
       
       
@@ -3409,7 +3422,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到我的博客，本项目采用hexo框架"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.jeanhua.cn/","name":"jeanhua's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.jeanhua.cn/categories/方法论/","name":"方法论"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.jeanhua.cn/2024/09/14/ebdfcd8245d2/","name":"博客在云服务器和github之间的同步"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","keywords":"blog","description":"欢迎来到我的博客，本项目采用hexo框架","author":{"@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/","description":"欢迎来到我的博客，本项目采用hexo框架"},"publisher":{"@type":"Organization","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.jeanhua.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"博客在云服务器和github之间的同步","description":"欢迎来到我的博客，本项目采用hexo框架","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.jeanhua.cn/2024/09/14/ebdfcd8245d2/"},"author":{"@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/"},"publisher":{"@type":"Organization","name":"jeanhua's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.jeanhua.cn/2024/09/14/ebdfcd8245d2/","wordCount":0,"datePublished":"2024-09-14T15:05:15.000Z","dateModified":"2024-09-14T15:21:06.797Z","articleSection":"方法论","keywords":"python,服务器,博客,ssh","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到我的博客，本项目采用hexo框架"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.jeanhua.cn/","name":"jeanhua's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.jeanhua.cn/categories/方法论/","name":"方法论"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.jeanhua.cn/2024/09/14/ebdfcd8245d2/","name":"博客在云服务器和github之间的同步"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","keywords":"blog","description":"欢迎来到我的博客，本项目采用hexo框架","author":{"@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/","description":"欢迎来到我的博客，本项目采用hexo框架"},"publisher":{"@type":"Organization","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.jeanhua.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"博客在云服务器和github之间的同步","description":"博客框架 hexo，网页服务器 apache2\n因为我的博客是放在云服务上的，然后又希望在GitHub上面同步，传统的办法是使用git把public里面的文件放到GitHub上面，然后手动将文件复制到云服务上，这就有一个问题，就是当文章删除的时候会导致删不掉，同时也很繁杂。","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.jeanhua.cn/2024/09/14/ebdfcd8245d2/"},"author":{"@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/"},"publisher":{"@type":"Organization","name":"jeanhua's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.jeanhua.cn/2024/09/14/ebdfcd8245d2/","wordCount":137,"datePublished":"2024-09-14T15:05:15.000Z","dateModified":"2024-09-18T00:25:53.568Z","articleSection":"方法论","keywords":"python,服务器,博客,ssh","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
