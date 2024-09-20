@@ -6,7 +6,7 @@
   <link href="http://blog.jeanhua.cn/atom.xml" rel="self"/>
   
   <link href="http://blog.jeanhua.cn/"/>
-  <updated>2024-09-19T08:50:50.396Z</updated>
+  <updated>2024-09-20T15:17:24.829Z</updated>
   <id>http://blog.jeanhua.cn/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>吐槽flutter</title>
+    <link href="http://blog.jeanhua.cn/2024/09/20/37610e31485f/"/>
+    <id>http://blog.jeanhua.cn/2024/09/20/37610e31485f/</id>
+    <published>2024-09-20T15:13:58.000Z</published>
+    <updated>2024-09-20T15:17:24.829Z</updated>
+    
+    <content type="html"><![CDATA[<p>准备拿flutter框架开发大创的前端项目，趁着其他部分没准备好，随便做一个app练练手，本来想继续改我那个safe-chat项目的，但是写的太烂了，导致我现在看不懂了🤣，而且那玩意只做了个发文字的功能，丑的一批，于是从头再来，然后加一下气泡和颜色，加发图片的功能，美化一下ui</p><p>写TextField的时候本来想设置限制行数的，结果遇到一个抽象玩意儿</p><span id="more"></span><p>这么看没问题</p><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Container(</span><br><span class="line">            decoration: <span class="keyword">const</span> BoxDecoration(color: Colors.yellow),</span><br><span class="line">            child: <span class="keyword">const</span> TextField(</span><br><span class="line">              style: TextStyle(color: Colors.black, fontSize: <span class="number">25</span>),</span><br><span class="line">              maxLines: <span class="number">14</span>,</span><br><span class="line">            ),</span><br><span class="line">          )</span><br></pre></td></tr></table></figure><p><strong>但是</strong></p><p><img src="/image/%E5%90%90%E6%A7%BDflutter/1.png" class="lazyload" data-srcset="/image/%E5%90%90%E6%A7%BDflutter/1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"></p><p>问题居然出在这里</p><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Container(</span><br><span class="line">  decoration: <span class="keyword">const</span> BoxDecoration(color: Colors.yellow),</span><br><span class="line">  child: <span class="keyword">const</span> TextField(</span><br><span class="line">    style: TextStyle(color: Colors.black, fontSize: <span class="number">25</span>),</span><br><span class="line">    maxLines: <span class="keyword">null</span>, <span class="comment">//设置为null就正常了</span></span><br><span class="line">  ),</span><br><span class="line">)</span><br></pre></td></tr></table></figure><p><img src="/image/%E5%90%90%E6%A7%BDflutter/2.png" class="lazyload" data-srcset="/image/%E5%90%90%E6%A7%BDflutter/2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"></p><p>最大行数拿去当占位符了是吧。。。。</p><p>还是得靠代码整活</p><p><img src="/image/%E5%90%90%E6%A7%BDflutter/3.png" class="lazyload" data-srcset="/image/%E5%90%90%E6%A7%BDflutter/3.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;准备拿flutter框架开发大创的前端项目，趁着其他部分没准备好，随便做一个app练练手，本来想继续改我那个safe-chat项目的，但是写的太烂了，导致我现在看不懂了🤣，而且那玩意只做了个发文字的功能，丑的一批，于是从头再来，然后加一下气泡和颜色，加发图片的功能，美化一下ui&lt;/p&gt;
+&lt;p&gt;写TextField的时候本来想设置限制行数的，结果遇到一个抽象玩意儿&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="随笔" scheme="http://blog.jeanhua.cn/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="flutter" scheme="http://blog.jeanhua.cn/tags/flutter/"/>
+    
+    <category term="吐槽" scheme="http://blog.jeanhua.cn/tags/%E5%90%90%E6%A7%BD/"/>
+    
+  </entry>
   
   <entry>
     <title>网站全站变灰</title>
@@ -488,34 +512,6 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>GK320刷机</title>
-    <link href="http://blog.jeanhua.cn/2024/04/26/238a8dd14134/"/>
-    <id>http://blog.jeanhua.cn/2024/04/26/238a8dd14134/</id>
-    <published>2024-04-26T12:19:00.000Z</published>
-    <updated>2024-09-12T14:51:06.211Z</updated>
-    
-    <content type="html"><![CDATA[<meta name="referrer" content="never"><h5 id="仓库地址"><a href="#仓库地址" class="headerlink" title="仓库地址"></a>仓库地址</h5><p><a href="https://gitee.com/jeanhua/super-engine-for-GK320">Gitee页面 https://gitee.com/jeanhua/super-engine-for-GK320</a></p><p><a href="https://github.com/jeanhua/super-engine-for-GK320">GitHub页面 https://github.com/jeanhua/super-engine-for-GK320</a></p><h1 id="提供GK320-GK310智能电子学生证的破解刷机服务"><a href="#提供GK320-GK310智能电子学生证的破解刷机服务" class="headerlink" title="提供GK320&#x2F;GK310智能电子学生证的破解刷机服务"></a>提供GK320&#x2F;GK310智能电子学生证的破解刷机服务</h1><p><img src="https://images.cnblogs.com/cnblogs_com/blogs/807529/galleries/2403671/o_240612012121_gk320.jpeg" class="lazyload" data-srcset="https://images.cnblogs.com/cnblogs_com/blogs/807529/galleries/2403671/o_240612012121_gk320.jpeg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image">  </p><h2 id="这本来是我高一-2020-用易语言写的，到高二基本完成所有工作，旨在破解这个学生证，给无聊的高中生活加点乐趣，现在毕业了分享给大家，其中离不开我同学的帮助，在这里一并感谢他们"><a href="#这本来是我高一-2020-用易语言写的，到高二基本完成所有工作，旨在破解这个学生证，给无聊的高中生活加点乐趣，现在毕业了分享给大家，其中离不开我同学的帮助，在这里一并感谢他们" class="headerlink" title="这本来是我高一(2020)用易语言写的，到高二基本完成所有工作，旨在破解这个学生证，给无聊的高中生活加点乐趣，现在毕业了分享给大家，其中离不开我同学的帮助，在这里一并感谢他们"></a>这本来是我高一(2020)用易语言写的，到高二基本完成所有工作，旨在破解这个学生证，给无聊的高中生活加点乐趣，现在毕业了分享给大家，其中离不开我同学的帮助，在这里一并感谢他们</h2><h1 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h1><h2 id="下载发行版压缩包解压后进行以下操作："><a href="#下载发行版压缩包解压后进行以下操作：" class="headerlink" title="下载发行版压缩包解压后进行以下操作："></a>下载发行版压缩包解压后进行以下操作：</h2><p>1.首先打开ADBDriverInstaller.exe这个程序，将学生证连接到电脑(注意：学生证自带的数据线是不支持数据传输的，仅能充电，所以请使用其他数据线)<br>2.点击refresh按钮刷新，看到下方出现设备后，点击install(这步是安装adb驱动，以进行下一步工作)<br>3.驱动安装完成后即可打开super engine for GK320.exe这个程序，页面如下<br><img src="https://images.cnblogs.com/cnblogs_com/blogs/807529/galleries/2403671/o_240612012343_software_shot.jpeg" class="lazyload" data-srcset="https://images.cnblogs.com/cnblogs_com/blogs/807529/galleries/2403671/o_240612012343_software_shot.jpeg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image">  </p><h3 id="出现此页面即为成功"><a href="#出现此页面即为成功" class="headerlink" title="出现此页面即为成功"></a>出现此页面即为成功</h3><p>4.单击mtk-su传输按钮，出现传输完成即可(这步是利用这个文件获取临时root权限)，一部学生证仅进行一步此操作<br>5.接下来即可进行其他操作，根据需要即可  </p><h1 id="软件的一些说明"><a href="#软件的一些说明" class="headerlink" title="软件的一些说明"></a>软件的一些说明</h1><h3 id="apk安装："><a href="#apk安装：" class="headerlink" title="apk安装："></a>apk安装：</h3><p>普通安装：安装至&#x2F;data&#x2F;app&#x2F; 目录，即正常安装目录，安装完可正常卸载<br>系统预装目录：安装至系统预装目录，可正常卸载，但文件不会删除，恢复出厂设置后仍自动安装<br>系统目录：安装至系统目录：此目录下的软件不能卸载，一般是系统软件，普通软件安装至此目录可能会有问题</p><h3 id="软件安装问题"><a href="#软件安装问题" class="headerlink" title="软件安装问题"></a>软件安装问题</h3><p>部分软件安装至普通目录或系统预装目录出现问题，可进行覆盖安装(下文)</p><h3 id="覆盖安装"><a href="#覆盖安装" class="headerlink" title="覆盖安装"></a>覆盖安装</h3><p>由于系统限制，不能在学生证上直接安装程序，但是可以覆盖安装<br>先在学生证安装一个图形桌面，即手机桌面程序，推荐x桌面，然后安装文件管理器，推荐mix管理器，在里面打开apk安装包进行覆盖安装  </p><h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>一定不要在学生证设置里面的开发者设置乱搞！！！防止变砖（我高中时就有好多同学好奇去点导致手机变砖！）</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;never&quot;&gt;
-
-&lt;h5 id=&quot;仓库地址&quot;&gt;&lt;a href=&quot;#仓库地址&quot; class=&quot;headerlink&quot; title=&quot;仓库地址&quot;&gt;&lt;/a&gt;仓库地址&lt;/h5&gt;&lt;p&gt;&lt;a href=&quot;https://gitee</summary>
-      
-    
-    
-    
-    <category term="笔记" scheme="http://blog.jeanhua.cn/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="刷机" scheme="http://blog.jeanhua.cn/tags/%E5%88%B7%E6%9C%BA/"/>
-    
-    <category term="工具" scheme="http://blog.jeanhua.cn/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
