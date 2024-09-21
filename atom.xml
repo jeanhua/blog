@@ -350,7 +350,7 @@
     <link href="http://blog.jeanhua.cn/2024/06/03/c99c3826bf5e/"/>
     <id>http://blog.jeanhua.cn/2024/06/03/c99c3826bf5e/</id>
     <published>2024-06-03T01:03:00.000Z</published>
-    <updated>2024-07-20T14:08:41.947Z</updated>
+    <updated>2024-09-21T05:30:21.785Z</updated>
     
     <content type="html"><![CDATA[<meta name="referrer" content="never"><p>以下几种可能</p><ul><li>1.调整调试平台为x64<br><img src="https://images.cnblogs.com/cnblogs_com/blogs/807529/galleries/2403669/o_240612011843_%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-06-03%20085054.png" class="lazyload" data-srcset="https://images.cnblogs.com/cnblogs_com/blogs/807529/galleries/2403669/o_240612011843_%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-06-03%20085054.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></li><li>2.点击vs顶部导航栏的调试-&gt;最下面那一项属性-&gt;CUDA C&#x2F;C++ -&gt;Common-&gt;CUDA Dustuom Dir设置为你安装CUDA toolkit的目录</li><li>3.如果你的电脑系统用户名为中文，请前往环境变量-&gt;用户变量，将tmp和temp的值修改为一个新文件夹(建议在D盘里面创建一个temp文件夹，然后把C盘用户里面的temp文件夹里面的内容剪切到D:\temp里面然后修改用户变量的值)<br><img src="https://images.cnblogs.com/cnblogs_com/blogs/807529/galleries/2403669/o_240612011641_%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-06-03%20090027.png" class="lazyload" data-srcset="https://images.cnblogs.com/cnblogs_com/blogs/807529/galleries/2403669/o_240612011641_%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-06-03%20090027.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></li></ul>]]></content>
     
@@ -366,6 +366,12 @@
     
     
     
+    <category term="方法论" scheme="http://blog.jeanhua.cn/categories/%E6%96%B9%E6%B3%95%E8%AE%BA/"/>
+    
+    
+    <category term="visual studio" scheme="http://blog.jeanhua.cn/tags/visual-studio/"/>
+    
+    <category term="cuda" scheme="http://blog.jeanhua.cn/tags/cuda/"/>
     
   </entry>
   
