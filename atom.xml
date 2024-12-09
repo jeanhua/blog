@@ -6,7 +6,7 @@
   <link href="http://blog.jeanhua.cn/atom.xml" rel="self"/>
   
   <link href="http://blog.jeanhua.cn/"/>
-  <updated>2024-12-09T13:54:56.371Z</updated>
+  <updated>2024-12-09T13:57:30.053Z</updated>
   <id>http://blog.jeanhua.cn/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://blog.jeanhua.cn/2024/12/09/d0787b82528e/"/>
     <id>http://blog.jeanhua.cn/2024/12/09/d0787b82528e/</id>
     <published>2024-12-09T13:46:48.000Z</published>
-    <updated>2024-12-09T13:54:56.371Z</updated>
+    <updated>2024-12-09T13:57:30.053Z</updated>
     
-    <content type="html"><![CDATA[<p>最近写数据结构作业发现vscode写C++编译后输出中文会乱码，之前用visual studio没有这种情况，研究了一下发现是源代码文件编码问题，默认是utf-8编码，改为gb2312保存再编译就好了</p><p><img src="/image/C++%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-vscode/1.png" class="lazyload" data-srcset="/image/C++%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-vscode/1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><p><img src="/image/C++%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-vscode/2.png" class="lazyload" data-srcset="/image/C++%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-vscode/2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><p><img src="/image/C++%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-vscode/3.png" class="lazyload" data-srcset="/image/C++%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-vscode/3.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><p><img src="/image/C++%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-vscode/4.png" class="lazyload" data-srcset="/image/C++%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-vscode/4.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>]]></content>
+    <content type="html"><![CDATA[<p>最近写数据结构作业发现vscode写C++编译后输出中文会乱码，之前用visual studio没有这种情况，研究了一下发现是源代码文件编码问题，默认是utf-8编码，改为gb2312保存再编译就好了</p><p><img src="/image/C++%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-vscode/1.png" class="lazyload" data-srcset="/image/C++%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-vscode/1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><p><img src="/image/C++%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-vscode/2.png" class="lazyload" data-srcset="/image/C++%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-vscode/2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><p><img src="/image/C++%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-vscode/3.png" class="lazyload" data-srcset="/image/C++%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-vscode/3.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><p><img src="/image/C++%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-vscode/4.png" class="lazyload" data-srcset="/image/C++%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-vscode/4.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><p><img src="/image/C++%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-vscode/5.png" class="lazyload" data-srcset="/image/C++%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-vscode/5.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>]]></content>
     
     
       
