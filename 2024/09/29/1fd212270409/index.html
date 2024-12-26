@@ -47,7 +47,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2024-09-28T16:13:32.000Z">
-<meta property="article:modified_time" content="2024-09-29T10:47:46.721Z">
+<meta property="article:modified_time" content="2024-12-26T15:29:04.012Z">
 <meta property="article:author" content="jeanhua">
 <meta property="article:tag" content="软件">
 <meta property="article:tag" content="代码">
@@ -1749,7 +1749,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg"},
-    lastupdate: new Date(1734753603803),
+    lastupdate: new Date(1735227038174),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo"],
       for_post: ["toc"],
@@ -2647,7 +2647,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h1 id="三、加密"><a href="#三、加密" class="headerlink" title="三、加密"></a>三、加密</h1><p>对于加密我是先用RSA非对称加密传输AES密钥然后后面用AES对称加密的(为什么不直接用RSA，因为非对称加密速度非常慢然后性能消耗比较大)，然后一般传的是base64编码的内容</p>
 <p>然后flutter和C#加密又有不同，flutter默认的填充方式和C#有点区别，这个不注意看半天不知道问题出在哪里</p>
 <h1 id="四、其他"><a href="#四、其他" class="headerlink" title="四、其他"></a>四、其他</h1><p><strong>网络传输</strong></p>
-<p>我刚开始是用socket传数据的，本来没啥问题，后面传图片的时候遇到问题了，一直json反序列化失败，要么就是无法解密base64，看了好久，发现问题处在socket的传输机制上，由于socket是流式传输，数据过长时会导致分包，就是你C#那边接收一次完成收到的数据不是完整的，就会导致解密失败</p>
+<p>我刚开始是用socket传数据的，本来没啥问题，后面传图片的时候遇到问题了，一直json反序列化失败，要么就是无法解密base64，看了好久，发现问题处在socket的传输机制上，由于socket是流式传输，数据过长时会导致分包(不严谨)，就是你C#那边接收一次完成收到的数据不是完整的，就会导致解密失败</p>
 <p>解密办法就是自己手动把数据分开，然后在里面编一个序号，服务端再重组，当然有一个最简单的办法，换成<strong>websocket</strong>，这个是应用层的，已经把分包和重组封装完毕了，直接暴力传就行，C#推荐fleck包</p>
 <h3 id="其他的还有好多坑，时间过得太久忘了……"><a href="#其他的还有好多坑，时间过得太久忘了……" class="headerlink" title="其他的还有好多坑，时间过得太久忘了……"></a>其他的还有好多坑，时间过得太久忘了……</h3>
   </div>
@@ -2675,6 +2675,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               <div class="license-meta-item">
                 <div class="license-meta-title">Posted on</div>
                 <div class="license-meta-text">Sep 29, 2024</div>
+              </div>
+              
+              <div class="license-meta-item">
+                <div class="license-meta-title">Update</div>
+                <div class="license-meta-text">Dec 26, 2024</div>
               </div>
               
               
@@ -2709,10 +2714,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-29T18:47:46+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-12-26T23:29:04+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Sep 29, 2024</p>
+    <p>更新于：Dec 26, 2024</p>
   </a>
 </div>
 
@@ -3418,7 +3423,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到我的博客，本项目采用hexo框架"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.jeanhua.cn/","name":"jeanhua's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.jeanhua.cn/categories/随笔/","name":"随笔"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.jeanhua.cn/2024/09/29/1fd212270409/","name":"做了一个聊天软件，记录踩的坑"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","keywords":"blog","description":"欢迎来到我的博客，本项目采用hexo框架","author":{"@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/","description":"欢迎来到我的博客，本项目采用hexo框架"},"publisher":{"@type":"Organization","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.jeanhua.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"做了一个聊天软件，记录踩的坑","description":"欢迎来到我的博客，本项目采用hexo框架","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.jeanhua.cn/2024/09/29/1fd212270409/"},"author":{"@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/"},"publisher":{"@type":"Organization","name":"jeanhua's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.jeanhua.cn/2024/09/29/1fd212270409/","wordCount":0,"datePublished":"2024-09-28T16:13:32.000Z","dateModified":"2024-09-29T10:47:46.721Z","articleSection":"随笔","keywords":"软件,代码,flutter","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到我的博客，本项目采用hexo框架"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.jeanhua.cn/","name":"jeanhua's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.jeanhua.cn/categories/随笔/","name":"随笔"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.jeanhua.cn/2024/09/29/1fd212270409/","name":"做了一个聊天软件，记录踩的坑"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","keywords":"blog","description":"欢迎来到我的博客，本项目采用hexo框架","author":{"@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/","description":"欢迎来到我的博客，本项目采用hexo框架"},"publisher":{"@type":"Organization","name":"jeanhua's blog","url":"http://blog.jeanhua.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.jeanhua.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"做了一个聊天软件，记录踩的坑","description":"欢迎来到我的博客，本项目采用hexo框架","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.jeanhua.cn/2024/09/29/1fd212270409/"},"author":{"@type":"Person","name":"jeanhua","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.jeanhua.cn/"},"publisher":{"@type":"Organization","name":"jeanhua's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.jeanhua.cn/2024/09/29/1fd212270409/","wordCount":0,"datePublished":"2024-09-28T16:13:32.000Z","dateModified":"2024-12-26T15:29:04.012Z","articleSection":"随笔","keywords":"软件,代码,flutter","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
